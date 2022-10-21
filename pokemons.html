@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/phosphor-icons"></script>
-  <link href="./dist/output.css" type="text/css" rel="stylesheet">
+  <link href="./dist/styles.css" type="text/css" rel="stylesheet">
   <title>Pokedex</title>
 </head>
 <body class="w-screen h-screen bg-[#121212] pt-11 pb-14 gap-4 justify-center grid grid-rows-pokemonBody">
@@ -23,19 +23,9 @@
 
   <main class="w-fit h-fit row-start-2 max-h-[841px] bg-gradient-to-b from-zinc-800 rounded-2xl p-2 text-zinc-200 lg:p-6" data-js="main">
     <ul class="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5" data-js="pokemon-list">
-      <!-- <li class="bg-[#159F6E] flex flex-col rounded-2xl p-3 max-w-[224px]">
-    <span class="text-green-800 font-semibold self-end">${id}</span>
-    <h3 class="flex justify-between font-semibold">${details.name}</h3>
-    <div class="grid grid-cols-2">
-      <div class="flex flex-col justify-center">
-        ${details.types.map(type => `<span class="bg-[#60e1ca] px-2 py-1 w-fit rounded-2xl mb-1 text-zinc-100 font-bold">${type.type.name}</span>`).join('')}
-      </div>
-      <img class="w-28 h-28 self-end" src="${details.sprites.other.dream_world.front_default}" alt="${details.name}">
-    </div>
-  </li> -->
     </ul>
 
-    <div class="flex justify-end gap-4">
+    <div class="flex justify-end gap-4 w">
       <span class="flex gap-1 items-center mt-2 cursor-pointer text-zinc-200 text-base md:text-1xl" data-js="prev"><i class="ph-arrow-left "></i> prev</span>
       <span class="flex gap-1 items-center mt-2 cursor-pointer text-zinc-200 text-base md:text-1xl" data-js="next">next <i class="ph-arrow-right "></i> </span>
     </div>
