@@ -14,24 +14,11 @@
 </head>
 <body class="w-screen h-screen bg-[#121212] pt-11 pb-14 gap-4 justify-center grid grid-rows-pokemonBody">
   <section class="h-fit grid grid-flow-dense grid-cols-2 grid-rows-2 gap-4">
-    <a class="w-fit" href="/">
+    <a class="w-fit" href="/pokemons.html">
       <i class="ph-arrow-left text-zinc-200 text-base md:text-3xl"></i>
     </a>
     <i class="ph-list text-zinc-200 text-base md:text-3xl self-end flex justify-end"></i>
-    <h1 class="text-zinc-200 font-bold text-base sm:text-2xl md:text-3xl  self-start">Pokedex</h1>
+    <h1 class="text-zinc-200 font-bold text-base sm:text-2xl md:text-3xl  self-start" data-js="pokemon-name">Detalhes</h1>
   </section>
-
-  <main class="w-fit h-fit row-start-2 max-h-[841px] bg-gradient-to-b from-zinc-800 rounded-2xl p-2 text-zinc-200 lg:p-6" data-js="main">
-    <ul class="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5" data-js="pokemon-list">
-      <!-- <a href="" data-js="pokemon-details">Test</a> -->
-    </ul>
-
-    <div class="flex justify-end gap-4 w">
-      <span class="flex gap-1 items-center mt-2 cursor-pointer text-zinc-200 text-base md:text-1xl" data-js="prev"><i class="ph-arrow-left "></i> prev</span>
-      <span class="flex gap-1 items-center mt-2 cursor-pointer text-zinc-200 text-base md:text-1xl" data-js="next">next <i class="ph-arrow-right "></i> </span>
-    </div>
-  </main>
-
-  <script type="module" src="assets/js/index.js"></script>
 </body>
 </html>

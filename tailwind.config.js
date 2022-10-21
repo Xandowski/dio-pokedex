@@ -1,7 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./**/*.{html, js}'],
+  content: ['./**/*.{html, js}', "./node_modules/flowbite/**/*.js"],
   safelist: [
+    'hover:scale-125',
+    'transform',
+    'transition',
+    'duration-500',
     'bg-grass-300',
     'bg-grass-500',
     'bg-poison-300',
@@ -83,6 +87,9 @@ module.exports = {
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
       },
+      backgroundImage: {
+        'pokemon': "url('/assets/images/pokebola.jpg')",
+      },
       colors: {
         'grass-300' : '#60e1ca',
         'grass-500' : '#159F6E',
@@ -147,5 +154,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+],
 }
