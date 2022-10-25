@@ -20,3 +20,12 @@ pokeAPI.getPokemonsDetails = (pokemon) => {
     .then(details => details)
     .catch(err => console.error(err))
 }
+
+pokeAPI.getPokemon = (id) => {
+  const url = `https://pokeapi.co/api/v2/pokemon/${id}`
+
+  return fetch(url)
+    .then(res => res.json())
+    .then(details => details)
+    .catch(err => console.error(err))
+}
