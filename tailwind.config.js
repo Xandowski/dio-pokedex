@@ -77,7 +77,7 @@ for (i = 300; i <= 700; i += 200) {
 
 
 module.exports = {
-  content: ['./**/*.{html, js}', "./node_modules/flowbite/**/*.js"],
+  content: ['./**/*.{html, js}'],
   safelist: mySafelist,
   mode: 'jit',
   theme: {
