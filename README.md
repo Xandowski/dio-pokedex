@@ -24,7 +24,7 @@ This application was developed during the Bootcamp <spabn>Orange Tech +</span> b
 
 ## ▶ Preview
 
-[![Deploy with Vercel](https://vercel.com/button)](https://pokedex-xandowski.vercel.app/)
+[![Deploy with Vercel](https://vercel.com/button)](https://dio-pokedex-xandowski.vercel.app/)
 
 ## 📃 About
 
