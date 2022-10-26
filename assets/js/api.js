@@ -21,8 +21,8 @@ pokeAPI.getPokemonsDetails = (pokemon) => {
     .catch(err => console.error(err))
 }
 
-pokeAPI.getPokemon = (id) => {
-  const url = `https://pokeapi.co/api/v2/pokemon/${id}`
+pokeAPI.getPokemon = (pokemon) => {
+  const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`
 
   return fetch(url)
     .then(res => res.json())

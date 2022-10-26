@@ -1,86 +1,90 @@
 /** @type {import('tailwindcss').Config} */
+const mySafelist = [
+  'drop-shadow-3xl',
+  'pt-3',
+  'hover:scale-125',
+  'transform',
+  'transition',
+  'duration-500',
+  'p-3',
+  'px-2',
+  'max-w-[224px]',
+  'font-semibold',
+  'justify-between',
+  'mb-1',
+  'text-zinc-100',
+  'text-zinc-300',
+  'w-28',
+  'w-36',
+  'h-28',
+  'h-36',
+  'capitalize',
+  'hidden',
+  'visible',
+  'bg-zinc-800',
+  'w-[672px]',
+  'h-[600px]',
+  'm-auto',
+  'text-2xl'
+]
+
+for (i = 1; i <= 100; i++) {
+  mySafelist.push(`w-[${i}%]`)
+}
+
+for (i = 300; i <= 700; i += 200) {
+  mySafelist.push(`bg-grass-${i}`)
+  mySafelist.push(`bg-poison-${i}`)
+  mySafelist.push(`bg-fire-${i}`)
+  mySafelist.push(`bg-flying-${i}`)
+  mySafelist.push(`bg-water-${i}`)
+  mySafelist.push(`bg-bug-${i}`)
+  mySafelist.push(`bg-normal-${i}`)
+  mySafelist.push(`bg-electric-${i}`)
+  mySafelist.push(`bg-ground-${i}`)
+  mySafelist.push(`bg-fairy-${i}`)
+  mySafelist.push(`bg-fighting-${i}`)
+  mySafelist.push(`bg-psychic-${i}`)
+  mySafelist.push(`bg-rock-${i}`)
+  mySafelist.push(`bg-ice-${i}`)
+  mySafelist.push(`bg-ghost-${i}`)
+  mySafelist.push(`bg-dragon-${i}`)
+  mySafelist.push(`bg-dark-${i}`)
+  mySafelist.push(`bg-steel-${i}`)
+  mySafelist.push(`bg-shadow-${i}`)
+  mySafelist.push(`bg-unknown-${i}`)
+  mySafelist.push(`text-grass-${i}`)
+  mySafelist.push(`text-poison-${i}`)
+  mySafelist.push(`text-fire-${i}`)
+  mySafelist.push(`text-flying-${i}`)
+  mySafelist.push(`text-water-${i}`)
+  mySafelist.push(`text-bug-${i}`)
+  mySafelist.push(`text-normal-${i}`)
+  mySafelist.push(`text-electric-${i}`)
+  mySafelist.push(`text-ground-${i}`)
+  mySafelist.push(`text-fairy-${i}`)
+  mySafelist.push(`text-fighting-${i}`)
+  mySafelist.push(`text-psychic-${i}`)
+  mySafelist.push(`text-rock-${i}`)
+  mySafelist.push(`text-ice-${i}`)
+  mySafelist.push(`text-ghost-${i}`)
+  mySafelist.push(`text-dragon-${i}`)
+  mySafelist.push(`text-dark-${i}`)
+  mySafelist.push(`text-steel-${i}`)
+  mySafelist.push(`text-shadow-${i}`)
+  mySafelist.push(`text-unknown-${i}`)
+}
+
+
 module.exports = {
   content: ['./**/*.{html, js}', "./node_modules/flowbite/**/*.js"],
-  safelist: [
-    'hover:scale-125',
-    'transform',
-    'transition',
-    'duration-500',
-    'bg-grass-300',
-    'bg-grass-500',
-    'bg-poison-300',
-    'bg-poison-500',
-    'bg-fire-300',
-    'bg-fire-500',
-    'bg-flying-300',
-    'bg-flying-500',
-    'bg-water-300',
-    'bg-water-500',
-    'bg-bug-300',
-    'bg-bug-500',
-    'bg-normal-300',
-    'bg-normal-500',
-    'bg-electric-300',
-    'bg-electric-500',
-    'bg-ground-300',
-    'bg-ground-500',
-    'bg-fairy-300',
-    'bg-fairy-500',
-    'bg-fighting-300',
-    'bg-fighting-500',
-    'bg-psychic-300',
-    'bg-psychic-500',
-    'bg-rock-300',
-    'bg-rock-500',
-    'bg-ice-300',
-    'bg-ice-500',
-    'bg-ghost-300',
-    'bg-ghost-500',
-    'bg-dragon-300',
-    'bg-dragon-500',
-    'bg-dark-300',
-    'bg-dark-500',
-    'bg-steel-300',
-    'bg-steel-500',
-    'bg-shadow-300',
-    'bg-shadow-500',
-    'bg-unknown-300',
-    'bg-unknown-500',
-    'text-grass-800',
-    'text-poison-800',
-    'text-fire-800',
-    'text-flying-800',
-    'text-water-800',
-    'text-bug-800',
-    'text-normal-800',
-    'text-electric-800',
-    'text-ground-800',
-    'text-fairy-800',
-    'text-fighting-800',
-    'text-psychic-800',
-    'text-rock-800',
-    'text-ice-800',
-    'text-ghost-800',
-    'text-dragon-800',
-    'text-dark-800',
-    'text-steel-800',
-    'text-shadow-800',
-    'text-unknown-800',
-    'p-3',
-    'px-2',
-    'max-w-[224px]',
-    'font-semibold',
-    'justify-between',
-    'mb-1',
-    'text-zinc-100',
-    'w-28',
-    'h-28',
-    'capitalize',
-    'hidden',
-    'visible'
-  ],
+  safelist: mySafelist,
+  mode: 'jit',
   theme: {
     extend: {
+      dropShadow: {
+        '3xl': '10px 10px 200px #159F6E',
+      },
       gridTemplateRows: {
         'pokemonBody': '100px minmax(850px, 1fr) 100px'
       },
@@ -88,7 +92,7 @@ module.exports = {
         sans: ["Roboto", "sans-serif"],
       },
       backgroundImage: {
-        'pokemon': "url('/assets/images/pokebola.jpg')",
+        'pokemon': "url('/assets/images/pokebola.png')",
       },
       colors: {
         'grass-300' : '#60e1ca',
