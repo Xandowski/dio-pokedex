@@ -4,7 +4,7 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "build": "postcss assets/css/global.css -o dist/styles.css"
+    "build": "postcss assets/css/global.css -o public/dist/styles.css"
   },
   "keywords": [],
   "author": "",
